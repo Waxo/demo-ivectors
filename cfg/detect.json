@@ -1,0 +1,21 @@
+{
+  "NbrEchFen": 2048,
+  "NbrBufferSNR": 8,
+  "AvgDetectionTimeDuration": 10.00,
+  "ProfondeurArbre": 3,
+  "NbrPuissances": 3,
+  "Puissance1": 8,
+  "Puissance2": 9,
+  "Puissance3": 10,
+  "SeuilDetection": 0.000050,
+  "SeuilDetectionSurplus": 1.2,
+  "SeuilFinSurplus": 4.0,
+  "NbrTrameMoyenne": 10,
+  "NbrTrameFin": 32,
+  "SeuilRSB": 0.0,
+  "NbrTamponsAvant": 2,
+  "Bits": 16,
+  "Stereo": 1,
+  "FreqEchantionnage": 16000,
+  "NbrMaxEvents": 500
+}
