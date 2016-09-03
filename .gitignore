@@ -7,8 +7,6 @@
 .idea/*
 .idea/tasks.xml
 .idea/dictionaries
-.idea/vcs.xml
-.idea/jsLibraryMappings.xml
 
 # Sensitive or high-churn files:
 .idea/dataSources.ids
@@ -101,3 +99,4 @@ jspm_packages
 /ivectors/tv.ndx
 /ivectors/tmp/
 /ivectors/TrainModel.ndx
+/record.wav

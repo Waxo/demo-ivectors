@@ -15,6 +15,7 @@
     "dotenv": "^2.0.0",
     "fs-extra": "^0.30.0",
     "moment": "^2.14.1",
+    "vorpal": "^1.11.4",
     "wav-file-info": "0.0.7",
     "winston": "^2.2.0"
   },

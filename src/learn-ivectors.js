@@ -7,7 +7,7 @@ const ns = require('./ivectors-tools/normalize-and-score');
 
 const learn = () => {
   const allNorm = false;
-  pc.clearProject()
+  return pc.clearProject()
     .then(() => pc.createProject())
     .then(() => prepareLearning())
     .then(() => ubmTV.createUBM())
@@ -15,8 +15,7 @@ const learn = () => {
     .then(() => iv.extractIV('ivExtractorMat.ndx'))
     .then(() => iv.extractIV('ivExtractor.ndx'))
     .then(() => ns.normalize())
-    .then(() => ns.createSph(allNorm))
-    .then(() => logger.log('info', 'Learning Done !'));
+    .then(() => ns.createSph(allNorm));
 };
 
 module.exports = {learn};
