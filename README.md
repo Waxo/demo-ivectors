@@ -8,7 +8,7 @@ This package is a demo for sound detection based on i-vectors.
 
 ## Contents
 * [Installation and start](#installation-and-start)
-* [Why `touch input`](#why-touch-input)
+* [Why `touch input`](#why-touch-input-)
 * [How to use](#how-to-use)
 
 ## Installation and start
