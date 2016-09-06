@@ -76,7 +76,7 @@ const normPRMFile_ = file => {
 
 const processFile = filename => {
   const start = new Date();
-  const [,ext] = filename.split('.');
+  const [, ext] = filename.split('.');
   if (ext === 'json') {
     fs.remove(`${detectedPath}/${filename}`);
   } else if (ext === 'wav') {

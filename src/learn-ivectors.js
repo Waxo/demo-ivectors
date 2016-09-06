@@ -1,4 +1,3 @@
-const logger = require('./logger');
 const pc = require('./ivectors-tools/project-cleaner');
 const prepareLearning = require('./ivectors-tools/prepare-learning');
 const ubmTV = require('./ivectors-tools/ubm-tv');

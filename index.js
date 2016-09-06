@@ -2,8 +2,7 @@ require('dotenv').config();
 const vorpal = require('vorpal')();
 const logger = require('./src/logger');
 const liv = require('./src/learn-ivectors');
-const lm = require('./src/listen-mic');
-const id = require('./src/ivectors-detect');
+const ivCommands = require('./src/ivectors-commands');
 
 vorpal.delimiter('demo-IV>').show();
 
@@ -18,27 +17,26 @@ vorpal.command('learn', 'Learn the model inside input')
 vorpal.command('begin [time]', 'Begin listening, and classifying')
   .alias('b')
   .action((args, cb) => {
-    logger.log('info', 'Listening direct input');
-    lm.start();
-    id.start();
+    ivCommands.start()
+      .then(msg => logger.log('info', msg))
+      .catch(err => logger.log('warn', err))
+      .finally(cb);
     if (args.time) {
       logger.log('info', `Listening will stop after ${args.time}ms`);
       setTimeout(() => {
-        logger.log('info', 'Stopping listening');
-        lm.stop();
-        setTimeout(id.stop, 1000);
+        ivCommands.stop()
+          .then(msg => logger.log('info', msg))
+          .catch(err => logger.log('warn', err))
+          .finally(cb);
       }, args.time);
     }
-    cb();
   });
 
-vorpal.command('Stop', 'Stop listening and classifying')
+vorpal.command('stop', 'Stop listening and classifying')
   .alias('s')
   .action((args, cb) => {
-    logger.log('info', 'Stopping listening');
-    lm.stop();
-    setTimeout(() => {
-      id.stop();
-      cb();
-    }, 1000);
+    ivCommands.stop()
+      .then(msg => logger.log('info', msg))
+      .catch(err => logger.log('warn', err))
+      .finally(cb);
   });

@@ -25,7 +25,7 @@ const normalize = () => {
     });
 };
 
-const normalizeSound = (file) => {
+const normalizeSound = file => {
   const normPLDA = [
     `${exePath}/05_1_IvNorm`,
     `--config ${ivCfgPath}/05_1_PLDA_ivNorm.cfg`,
@@ -99,7 +99,6 @@ const trainPLDA = () => {
   ];
   return execAsync(train.join(' '));
 };
-
 
 const scorePLDA = (name, norm = false) => {
   return trainPLDA()

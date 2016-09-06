@@ -94,7 +94,7 @@ const prepareLearning = () => {
       `${ivPath}/TrainModel.ndx`))
     .then(() => fs.readFileAsync(`${ivPath}/ivExtractor.ndx`))
     .then(buffer => fs.appendFileAsync(`${ivPath}/TrainModel.ndx`,
-      '\n' + buffer.toString()))
+      '\n' + buffer.toString())) // eslint-disable-line prefer-template
     .delay(10000)
     .then(() => normPRM_());
 };
