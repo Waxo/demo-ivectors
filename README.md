@@ -1,25 +1,33 @@
-# Demo I-Vectors
+# Demo i-Vectors
 
-[![Vorpal cli app](https://img.shields.io/badge/cli--app-vorpal-ff69b4.svg)](http://vorpal.js.org/)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
-
 
 This package is a demo for sound detection based on i-vectors.
 
+## Prerequisites
+
+You will need the following things properly installed on your computer.
+
+* [Git](http://git-scm.com/)
+* [Node.js](http://nodejs.org/) (with NPM)
+* [Bower](http://bower.io/)
+* [Ember CLI](http://ember-cli.com/)
+* [PhantomJS](http://phantomjs.org/)
+* [Electron-prebuilt](https://github.com/electron-userland/electron-prebuilt)([Electron Website](http://http://electron.atom.io/))
+
 ## Contents
 * [Installation and start](#installation-and-start)
-* [Why `touch input`](#why-touch-input-)
 * [How to use](#how-to-use)
 
 ## Installation and start
 ```sh
+git clone https://github.com/Waxo/demo-ivectors
 npm install
-touch input
+bower install
 npm start
 ```
-
-## Why `touch input` ?
-Input holds the input sounds that you want to classify.
+## How to use
+`input` holds the input sounds that you want to classify.
 Each folder contains sounds for the given cluster.
 
 Example : 
@@ -45,7 +53,7 @@ input
 └── Yawn
 ```
 
-## How to use
-This is a vorpal app : just type help and you will see !  
-*You must launch learn before trying to start any detection,
-you don't have to learn every time you start the app*
+Inside `public/img` you can put the images you want for each cluster. The image
+name must match exactly the name of the repository inside input.
+
+Example : `Breathing.jpg` or `Breathing.png`

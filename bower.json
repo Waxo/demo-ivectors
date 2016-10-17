@@ -1,0 +1,8 @@
+{
+  "name": "demo-ivectors",
+  "dependencies": {
+    "ember": "~2.8.2",
+    "ember-cli-shims": "0.1.3",
+    "semantic-ui": "^2.2.4"
+  }
+}
