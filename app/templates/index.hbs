@@ -1,0 +1,22 @@
+<div class="ui container" style="margin-top: 10px;">
+  <div class="ui grid">
+    <div class="four column row">
+      <div class="left floated column">{{start-stop}}</div>
+      <div class="left floated column">
+        {{ui-checkbox class="slider" checked=canLearn}}
+        {{#if canLearn}}
+          {{learn-ivectors-comp}}
+        {{/if}}
+      </div>
+      <div class="right floated column">{{state-comp}}</div>
+    </div>
+    <div class="row">
+      <div class="sixteen wide column">{{chart-comp}}</div>
+    </div>
+    <div class="row">
+      {{cluster-manager-comp}}
+    </div>
+  </div>
+</div>
+
+{{outlet}}

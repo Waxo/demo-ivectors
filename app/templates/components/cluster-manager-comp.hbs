@@ -1,0 +1,7 @@
+<div class="ui small images">
+  {{#each clusters as |cluster|}}
+    {{cluster-comp lastDetection=lastDetection clusterName=cluster}}
+  {{/each}}
+</div>
+
+{{yield}}

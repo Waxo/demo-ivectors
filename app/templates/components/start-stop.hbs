@@ -1,0 +1,10 @@
+<div class="ui button {{if isStarted "disabled" ""}}"
+  {{action "startListening"}}>
+  Start
+</div>
+<div class="ui button {{if isStarted "" "disabled"}}"
+  {{action "stopListening"}}>
+  Stop
+</div>
+
+{{yield}}
