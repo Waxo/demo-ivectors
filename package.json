@@ -1,6 +1,6 @@
 {
   "name": "demo-ivectors",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "",
   "private": true,
   "directories": {
@@ -113,8 +113,14 @@
         80,
         2
       ],
-      "import/no-unresolved": [2, {"ignore": ["ember"]}]
-
+      "import/no-unresolved": [
+        2,
+        {
+          "ignore": [
+            "ember"
+          ]
+        }
+      ]
     },
     "ignores": [
       "tests/**",
