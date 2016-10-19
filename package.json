@@ -39,7 +39,7 @@
     "ember-cli-sri": "^2.1.1",
     "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
-    "ember-data": "^2.8.1",
+    "ember-data": "^2.9.0",
     "ember-electron": "1.10.8",
     "ember-export-application-global": "^1.1.1",
     "ember-highcharts": "0.5.0",
@@ -48,7 +48,7 @@
     "ember-resolver": "^2.1.0",
     "highcharts": "5.0.0",
     "loader.js": "^4.0.11",
-    "semantic-ui-ember": "2.0.0-beta.3"
+    "semantic-ui-ember": "2.0.0"
   },
   "dependencies": {
     "bluebird": "^3.4.6",

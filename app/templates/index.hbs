@@ -2,12 +2,7 @@
   <div class="ui grid">
     <div class="four column row">
       <div class="left floated column">{{start-stop}}</div>
-      <div class="left floated column">
-        {{ui-checkbox class="slider" checked=canLearn}}
-        {{#if canLearn}}
-          {{learn-ivectors-comp}}
-        {{/if}}
-      </div>
+      <div class="left floated column">{{learn-ivectors-comp}}</div>
       <div class="right floated column">{{state-comp}}</div>
     </div>
     <div class="row">

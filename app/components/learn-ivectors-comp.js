@@ -3,6 +3,7 @@ import Ember from 'ember';
 import learn from '../utils/learn';
 
 export default Ember.Component.extend({
+  canLearn: false,
   isLearning: false,
   isDone: false,
   actions: {

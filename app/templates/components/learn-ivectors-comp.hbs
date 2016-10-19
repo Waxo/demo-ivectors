@@ -1,6 +1,8 @@
-<div class="ui {{if isDone "teal"}} button {{if isLearning "disabled"}}"
-  {{action 'startLearning'}}>
-  Learn
-</div>
-
+{{ui-checkbox class="slider" checked=canLearn onChange=(action (mut canLearn))}}
+{{#if canLearn}}
+  <div class="ui {{if isDone "teal"}} button {{if isLearning "disabled"}}"
+    {{action 'startLearning'}}>
+    Learn
+  </div>
+{{/if}}
 {{yield}}
